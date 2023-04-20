@@ -2,14 +2,15 @@ package DTO;
 
 public class Cat
 {
+    int catId;
     String name;
-    int id;
+
     float weight;
 
-    public Cat(String name, int id, float weight)
+    public Cat(String name, int catId, float weight)
     {
         this.name = name;
-        this.id = id;
+        this.catId = catId;
         this.weight = weight;
     }
 
@@ -18,9 +19,9 @@ public class Cat
         return name;
     }
 
-    public int getId()
+    public int getCatIdId()
     {
-        return id;
+        return catId;
     }
 
     public float getWeight()
@@ -33,7 +34,7 @@ public class Cat
     {
         return "Cat{" +
                 "name='" + name + '\'' +
-                ", id=" + id +
+                ", catId=" + catId +
                 ", weight=" + weight +
                 '}';
     }
