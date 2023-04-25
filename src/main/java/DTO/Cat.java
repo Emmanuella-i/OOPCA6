@@ -19,7 +19,7 @@ public class Cat
         return name;
     }
 
-    public int getCatIdId()
+    public int getCatId()
     {
         return catId;
     }

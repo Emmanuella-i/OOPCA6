@@ -1,4 +1,5 @@
 package DAO;
+import DTO.Cat;
 import Exceptions.DAOException;
 
 import java.sql.Connection;
@@ -6,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-public class MysqlDAO
+public abstract class MysqlDAO
 {
     public Connection getConnection() throws DAOException
     {
@@ -51,5 +52,7 @@ public class MysqlDAO
             System.exit(1);
         }
     }
+
+    public abstract Cat findCatById(String catId) throws DAOException;
 }
 

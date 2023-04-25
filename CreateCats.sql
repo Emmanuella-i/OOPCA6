@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS cat;
 CREATE TABLE cat(catId int NOT NULL AUTO_INCREMENT,
              name VARCHAR(20),
              weight float NOT NULL AUTO_INCREMENT,
-			 PRIMARY KEY (custID));
+			 PRIMARY KEY (catId));
 			 
 
 
